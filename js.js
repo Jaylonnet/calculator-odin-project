@@ -32,7 +32,7 @@ function updateSolution(value) {
     solution.appendChild(content);
 };
 
-const numbers = document.querySelectorAll('#numbers button');
+const numbers = document.querySelectorAll('.number');
 numbers.forEach((number) => {
     number.addEventListener('click', (e) => {
         updateSolution(number.textContent);
