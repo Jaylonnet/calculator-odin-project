@@ -31,3 +31,10 @@ function updateSolution(value) {
     let content = document.createTextNode(value);
     solution.appendChild(content);
 };
+
+const numbers = document.querySelectorAll('#numbers button');
+numbers.forEach((number) => {
+    number.addEventListener('click', (e) => {
+        updateSolution(number.textContent);
+    });
+});
