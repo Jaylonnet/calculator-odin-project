@@ -25,3 +25,9 @@ function operate(operator, n1, n2) {
         return n1/n2;
     };
 };
+
+let solution = document.querySelector('#solution');
+function updateSolution(value) {
+    let content = document.createTextNode(value);
+    solution.appendChild(content);
+};
