@@ -5,11 +5,16 @@
 }
 
 .container {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 button {
     background: #2c3e50;
     color: #ecf0f1;
-    border: none;
-    padding: 10px;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    flex-grow: 1;
 }
