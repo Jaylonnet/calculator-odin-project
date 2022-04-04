@@ -38,3 +38,11 @@ numbers.forEach((number) => {
         updateSolution(number.textContent);
     });
 });
+
+let operator = '';
+const operations = document.querySelectorAll('.operation');
+operations.forEach((operation) => {
+    operation.addEventListener('click', (e) => {
+        operator = operation.textContent;
+    });
+});
