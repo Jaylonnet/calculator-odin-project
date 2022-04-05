@@ -1,3 +1,7 @@
+let value1 = null;
+let value2 = null;
+let operator = '';
+
 function add(n1, n2) {
     return (n1 + n2);
 };
@@ -16,13 +20,13 @@ function divide(n1, n2) {
 
 function operate(operator, n1, n2) {
     if (operator === '+') {
-        return n1+n2;
+        return add(n1,n2);
     } else if (operator === '-') {
-        return n1-n2;
+        return subtract(n1,n2);
     } else if (operator === '*') {
-        return n1*n2;
+        return multiply(n1,n2);
     } else if (operator === '/') {
-        return n1/n2;
+        return divide(n1,n2);
     };
 };
 
@@ -39,7 +43,6 @@ numbers.forEach((number) => {
     });
 });
 
-let operator = '';
 const operations = document.querySelectorAll('.operation');
 operations.forEach((operation) => {
     operation.addEventListener('click', (e) => {
